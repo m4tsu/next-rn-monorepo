@@ -6,12 +6,16 @@
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-16",
 
 	"extensions": [
+		"github.copilot",
+    "github.copilot-labs",
     "esbenp.prettier-vscode",
     "formulahendry.auto-close-tag",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
     "shardulm94.trailing-spaces",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+		"zenstack.zenstack",
+
 ],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

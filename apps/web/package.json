@@ -1,11 +1,7 @@
 {
-  "name": "nextjs-template",
+  "name": "web",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
