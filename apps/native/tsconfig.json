@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -19,12 +20,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [],
-    "composite": true, // for monorepom
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
     "paths": {
-      "sample-package/*": ["./packages/sample-package/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
+  // "extends": "expo/tsconfig.base"
 }
