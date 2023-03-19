@@ -1,6 +1,11 @@
-## Next.js(v13) Template
-Next.js アプリケーションを作成する時のためのテンプレート
+## About
+Next.js, Expo(React Native) を含む monorepo。
 
+## Folder Structure
+- `apps`: アプリケーションをまとめたフォルダ
+  - `web`: Next.js によるWebアプリケーション
+  - `native`: Expo(React Native) によるネイティブアプリケーション
+- `packages`: 共有モジュールをまとめたフォルダ
 
-## 現時点で設定済みの基本ライブラリ等
-- linter 系
+## Setup
+- `npm i`
