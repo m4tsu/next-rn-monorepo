@@ -7,7 +7,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint:tsc": "tsc --noEmit"
+    "lint": "run-s -c lint:*",
+    "lint:eslint": "eslint src/**/*.{ts,tsx,js,jsx,json,md}",
+    "lint:prettier": "prettier --check src/**/*.{ts,tsx,js,jsx,json,md}",
+    "lint:tsc": "tsc --noEmit",
+    "lint-fix": "run-s -c lint-fix:*",
+    "lint-fix:eslint": "eslint src/**/*.{ts,tsx,js,jsx,json,md} --fix",
+    "lint-fix:prettier": "prettier --write src/**/*.{ts,tsx,js,jsx,json,md}"
   },
   "dependencies": {
     "expo": "~48.0.6",
