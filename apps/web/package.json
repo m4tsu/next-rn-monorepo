@@ -15,6 +15,7 @@
     "lint-fix:prettier": "prettier --write src/**/*.{ts,tsx,js,jsx,json,md}"
   },
   "dependencies": {
+    "sample-package": "*",
     "@next/font": "13.1.6",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",

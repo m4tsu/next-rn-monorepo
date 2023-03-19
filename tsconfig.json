@@ -19,7 +19,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": []
+    "plugins": [],
+    "composite": true, // for monorepom
+    "paths": {
+      "sample-package/*": ["./packages/sample-package/*"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

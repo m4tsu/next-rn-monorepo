@@ -1,5 +1,6 @@
 // import { Inter } from '@next/font/google'
 import Image from 'next/image'
+import { greeting } from 'sample-package/greeting'
 
 import styles from './page.module.css'
 
@@ -9,6 +10,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
+      {greeting('hoge')}
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
